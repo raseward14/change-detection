@@ -1,0 +1,34 @@
+{
+  "hash": "375e8539",
+  "configHash": "a2920c96",
+  "lockfileHash": "d31b81b4",
+  "browserHash": "c2fd5e79",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "cfee1975",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "5f18826b",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "5f6b1ef8",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-VNCWXCPH": {
+      "file": "chunk-VNCWXCPH.js"
+    },
+    "chunk-LTSAIPOX": {
+      "file": "chunk-LTSAIPOX.js"
+    }
+  }
+}
