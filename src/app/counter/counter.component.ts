@@ -11,8 +11,8 @@ import { InfoMessageComponent } from '../info-message/info-message.component';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CounterComponent implements OnInit {
-  count = signal(0);
   private zone = inject(NgZone);
+  count = signal(0);
 
   get debugOutput() {
     console.log('[Counter] "debugOutput" binding re-evaluated.');
