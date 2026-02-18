@@ -1,4 +1,4 @@
-import { Component, signal, ChangeDetectionStrategy, inject } from '@angular/core';
+import { Component, ChangeDetectionStrategy, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { MessagesService } from '../messages.service';
@@ -13,7 +13,7 @@ import { MessagesService } from '../messages.service';
 })
 export class NewMessageComponent {
   private messagesService = inject(MessagesService);
-  enteredText = signal('');
+  enteredText = '';
 
 
   get debugOutput() {
@@ -22,7 +22,7 @@ export class NewMessageComponent {
   }
 
   onSubmit() {
-    this.messagesService.addMessage(this.enteredText());
-    this.enteredText.set('');
+    this.messagesService.addMessage(this.enteredText);
+    this.enteredText = '';
   }
 }
