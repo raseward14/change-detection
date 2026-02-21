@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, inject } from '@angular/core';
+import { Component, ChangeDetectionStrategy, inject, ChangeDetectorRef } from '@angular/core';
 
 import { MessagesService } from '../messages.service';
 
@@ -11,6 +11,8 @@ import { MessagesService } from '../messages.service';
 })
 export class MessagesListComponent {
   private messagesService = inject(MessagesService);
+  private cdRef = inject(ChangeDetectorRef);
+  
   get messages() {
     return this.messagesService.allMessages;
   }
