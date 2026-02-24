@@ -13,6 +13,6 @@ export class MessagesService {
 
     addMessage(message: string) {
         this.messages = [...this.messages, message];
-        this.messages$.next(this.messages);
+        this.messages$.next([...this.messages]);
     }
 }
